@@ -27,9 +27,9 @@ function getWeatherReport(cityName) {
 
       success: function(response) {
         console.log(response.main.temp);
-        $('#temp').append(document.createTextNode(response.main.temp-273));
+        $('#temp').text(Math.floor(response.main.temp-273));
         // append on the Html.
-        $('#location').append(document.createTextNode(cityName));
+        $('#location').text((cityName));
         
       },
       error: function(response) {
