@@ -34,6 +34,7 @@ function getWeatherReport(cityName) {
       },
       error: function(response) {
         console.log(response);
+        alert('Not A city!')
       }
     }
   );
